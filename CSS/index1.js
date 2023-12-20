@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (yourScoreValue > computerScoreValue) {
           nextButton.addEventListener("click", function () {
             // Redirect to index2.html
-            window.location.href = "/index2.html";
+            window.location.href = "./index2.html";
           });
         }
         addGreenEclipsesToWinner(".myArea");
