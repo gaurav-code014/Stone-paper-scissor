@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C600%2C700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dangrek%3A400"/>
+    <link rel="stylesheet" href="/CSS/index1.css" />
+    <link rel="stylesheet" href="/CSS/index2.css" />
+
+  </head>
+  <body>
+    <div class="master-container">
+      <div class="header">
+        <div class="rectangle1">
+          <div class="rock">ROCK</div>
+          <div class="paper">PAPER</div>
+          <div class="scissor">SCISSOR</div>
+
+          <div class="computer-score-rectangle">
+            <div class="computer-score-heading">
+              <div class="computer">COMPUTER</div>
+              <div class="score">SCORE</div>
+            </div>
+            <div class="score-number" id="computer-score-value">0</div>
+          </div>
+          <div class="your-score-rectangle">
+            <div class="your-score-heading">
+                <div class="your">YOUR</div>
+                <div class="score">SCORE</div>
+            </div>
+            <div class="score-number" id="your-score-value">0</div>
+        </div>
+        </div>
+      </div>
+      <div class="container" id="mainContainer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+      
+        <div class="circle" id="circle1">
+          <img id="gameImg" src="/images/scissor.png">
+        </div>
+        <div class="circle" id="circle2">
+          <img id="gameImg" src="/images/rock.png">
+        </div>
+        <div class="circle" id="circle3">
+          <img id="gameImg" src="/images/paper.png">
+        </div>
+      </div>
+      <div class="clicked-container invisible" id="clickedContainer">
+        <div class="myArea">
+          <h6 style="color: black;">YOU PICKED</h6>
+        </div>
+        <div class="resultArea">
+          <div class="result-message">Your Result Message</div>
+          <div class="play-again-button">PLAY AGAIN</div>
+      </div>
+        <div class="computerArea">
+          <h6 style="color: black;">PC PICKED</h6>
+
+        </div>
+      </div>
+      <div class="footer">
+        <div class="game-rule-container" id="gameRuleContainer">
+            <div class="rule-minicontainer">
+                <h1 class="rules-heading">Game Rules</h1>
+                <div class="bullet-point">
+                    <span class="bullet"></span>
+                    <span class="text">Rock beats scissors, scissors beat paper, and paper beats rock</span>
+                </div>
+                <div class="bullet-point">
+                    <span class="bullet"></span>
+                    <p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p>
+                </div>
+                <div class="bullet-point">
+                    <span class="bullet"></span>
+                    <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</p>
+                </div>
+                <div class="bullet-point">
+                    <span class="bullet"></span>
+                    <p>If both players lay down the same hand, each player lays down another hand.</p>
+                </div>
+            </div>
+            <div class="cancel-round">X</div>
+        </div>
+            <div class="rule-rectangle">
+                <div class="rule-button">RULES</div>
+            </div>
+            <div class="next-rectangle">
+              <div class="next-button">NEXT</div>
+          </div>
+
+
+        
+    </div>
+    <script src="/CSS/index1.js"></script>
+  </body>
+</html>

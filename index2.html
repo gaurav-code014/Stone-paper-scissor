@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Congratulations!!!</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A600"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A600"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dangrek%3A400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C600%2C700"
+    />
+
+    <link rel="stylesheet" href="/CSS/index3.css" />
+  </head>
+  <body>
+    <div class="frame-9-Ym3">
+      <img class="auto-group-auc3-sYR" src="/images/congrats.png" />
+      <p class="hurray-Zw3">HURRAY!!</p>
+      <p class="you-won-the-game-4so">YOU WON THE GAME</p>
+      <div class="auto-group-trnb-mnD">
+        <div class="auto-group-hzzb-KHw" id="redirect-to-home">PLAY AGAIN</div>
+
+        <div class="game-rule-container" id="gameRuleContainer">
+          <div class="rule-minicontainer">
+            <h1 class="rules-heading">Game Rules</h1>
+            <div class="bullet-point">
+              <span class="bullet"></span>
+              <span class="text"
+                >Rock beats scissors, scissors beat paper, and paper beats
+                rock</span
+              >
+            </div>
+            <div class="bullet-point">
+              <span class="bullet"></span>
+              <p>
+                Agree ahead of time whether you’ll count off “rock, paper,
+                scissors, shoot” or just “rock, paper, scissors.”
+              </p>
+            </div>
+            <div class="bullet-point">
+              <span class="bullet"></span>
+              <p>
+                Use rock, paper, scissors to settle minor decisions or simply
+                play to pass the time.
+              </p>
+            </div>
+            <div class="bullet-point">
+              <span class="bullet"></span>
+              <p>
+                If both players lay down the same hand, each player lays down
+                another hand.
+              </p>
+            </div>
+          </div>
+          <div class="cancel-round">X</div>
+        </div>
+        <div class="auto-group-jjns-mvd" id="rules-button">RULES</div>
+      </div>
+    </div>
+
+    <script>
+      var x = document
+        .getElementById("redirect-to-home")
+        .addEventListener("click", function () {
+          window.location.href = "/index.html";
+        });
+
+      var gameRuleContainer = document.getElementById("gameRuleContainer");
+      var cancelRoundButton = document.querySelector(".cancel-round");
+      var ruleButton = document.querySelector("#rules-button");
+      cancelRoundButton.addEventListener("click", function () {
+        toggleVisibility();
+      });
+
+      ruleButton.addEventListener("click", function () {
+        toggleVisibility();
+      });
+
+      function toggleVisibility() {
+        var gameRuleContainer = document.getElementById("gameRuleContainer");
+        if (
+          gameRuleContainer.style.display === "none" ||
+          gameRuleContainer.style.display === ""
+        ) {
+          gameRuleContainer.style.display = "flex";
+        } else {
+          gameRuleContainer.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

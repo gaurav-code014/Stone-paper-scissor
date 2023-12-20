@@ -1,0 +1,349 @@
+body {
+  background-color: #8cc461;
+}
+
+.invisible {
+  display: none !important;
+}
+
+#gameRuleContainer {
+  display: none;
+}
+
+.visible {
+  display: flex !important; 
+}
+
+.rectangle1 {
+  width: 800px;
+  height: 158px;
+  top: 62px;
+  left: 240px;
+  border-radius: 13px;
+  border: 2px solid white; 
+  position: relative;
+}
+
+.rule-rectangle {
+  position: absolute;
+  width: 119px;
+  height: 40px;
+  top: 675px;
+  left: 1136px;
+  border-radius: 10px;
+  border: 2px solid white; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.rule-button {
+  position: absolute;
+  width: 72px;
+  height: 20px;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-family: Roboto, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff; 
+}
+
+.next-rectangle {
+  visibility: hidden;
+  position: absolute;
+  width: 119px;
+  height: 40px;
+  top: 675px;
+  left: 1270px;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.next-button {
+  position: absolute;
+  width: 72px;
+  height: 20px;
+  top: 50%; 
+  left: 55%; 
+  transform: translate(-50%, -50%); 
+  font-family: Roboto, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff; 
+}
+
+.rock {
+  position: absolute;
+  width: 135px;
+  height: 37px;
+  top: 5px;
+  left: 50px;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: white;
+}
+
+.paper {
+  position: absolute;
+  width: 150px;
+  height: 37px;
+  top: 50px;
+  left: 50px;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: white;
+}
+
+.scissor {
+  position: absolute;
+  width: 235px;
+  height: 37px;
+  top: 100px;
+  left: 50px;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: white;
+}
+
+.computer-score-rectangle,
+.your-score-rectangle {
+  position: absolute;
+  width: 139px;
+  height: 128px;
+  border-radius: 9px;
+  background-color: #fff; 
+  text-align: center;
+}
+
+.computer-score-rectangle {
+  position: absolute;
+  top: 15px;
+  left: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.computer-score-heading {
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center; 
+  color: #656565;
+}
+
+.computer {
+  margin-top: 7px;
+  margin-bottom: 7px; 
+}
+
+
+.your-score-rectangle {
+  top: 15px;
+  left: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.your-score-heading {
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center; 
+  color: #656565;
+}
+
+.your {
+  margin-top: 7px;
+  margin-bottom: 7px; 
+}
+
+
+.score-number {
+  font-family: Roboto, sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+
+.game-rule-container {
+  position: fixed;
+  width: 303px;
+  height: 367px;
+  top: 288px;
+  left: 964px;
+  border-radius: 13px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.cancel-round {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 267px;
+  left: 1225px;
+  border: 5px solid white; 
+  background-color: red;
+  border-radius: 50%; 
+  z-index: 2; 
+  cursor: pointer;
+  text-align: center;
+  font-family: Dangrek, "Source Sans Pro";
+  font-size: 30px;
+  color: white;
+  justify-content: center;
+}
+
+.rule-minicontainer {
+  position: fixed;
+  width: 278px;
+  height: 340px;
+  top: 295px;
+  left: 970px;
+  border-radius: 13px;
+  border: 7px solid #004429; 
+  background-color: #004429; 
+  z-index: 0;
+}
+
+.rules-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 29px;
+  font-family: Roboto, "Source Sans Pro";
+  color: white;
+  margin-bottom: 10px;
+}
+
+.bullet-point {
+  position: relative;
+  margin-bottom: 5px; 
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  font-family: Roboto, "Source Sans Pro";
+  font-size: 13px;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  margin-right: 5px; 
+  background-color: #ffd600;
+}
+
+.text {
+  flex-grow: 1; 
+}
+
+/* Implementing game container logic */
+
+.container {
+  top: 90px;
+  position: relative;
+  
+  width: 950px;
+  height: 500px;
+ 
+}
+
+.line {
+  position: absolute;
+  background: #000000a3;
+  transform-origin: 0 0;
+}
+
+#line1 {
+  width: 133px;
+  top: 180px; 
+  left: 409px; 
+  height: 15px;
+}
+
+#line2 {
+  width: 135px;
+  top: 300px; 
+  left: 480px; 
+  height: 15px;
+  transform: rotate(-60deg); 
+}
+
+#line3 {
+  width: 135px;
+  top: 190px; 
+  left: 410px; 
+  height: 15px;
+  transform: rotate(60deg); 
+}
+
+.circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: -1px 1px 11px 0px #00000059;
+  background-color: #f9f6ee;
+  cursor: pointer; 
+}
+
+#circle1 {
+  top: 140px; 
+  left: 520px; 
+  border: 10px solid #bd00ff;
+}
+
+#circle2 {
+  top: 140px; 
+  left: 360px; 
+  border: 10px solid #0074b6;
+}
+
+#circle3 {
+  top: 265px; 
+  left: 435px; 
+  border: 10px solid #ffa943;
+}
+
+#gameImg {
+  height: 55px;
+  width: 60px;
+}

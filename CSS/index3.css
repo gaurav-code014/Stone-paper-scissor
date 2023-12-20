@@ -1,0 +1,203 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 100%;
+  background-color: #8cc461;
+}.frame-9-Ym3 {
+  box-sizing: border-box;
+  padding: 8.6rem 2.5rem 2.3rem 38.8rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #89c15e;
+}
+.frame-9-Ym3 .auto-group-auc3-sYR {
+  margin: 0rem 36.3rem 3.2rem 0rem;
+  width: 50.4rem;
+  height: 30.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.frame-9-Ym3 .hurray-Zw3 {
+  margin: 0rem 30.7rem 0.4rem 0rem;
+  text-align: center;
+  font-size: 9.1rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  letter-spacing: 0.91rem;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.frame-9-Ym3 .you-won-the-game-4so {
+  margin: 0rem 30.2rem 5.7rem 0rem;
+  text-align: center;
+  font-size: 4.1rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  letter-spacing: 0.41rem;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.frame-9-Ym3 .auto-group-trnb-mnD {
+  margin-left: 19.3rem;
+  width: calc(100% - 19.3rem);
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.frame-9-Ym3 .auto-group-trnb-mnD .auto-group-hzzb-KHw {
+  margin: 0rem 38.1rem 3.2rem 0rem;
+  width: 17.4rem;
+  height: 4.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  letter-spacing: 0.15rem;
+  color: #6b6b6b;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 0.9rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.frame-9-Ym3 .auto-group-trnb-mnD .auto-group-jjns-mvd {
+  width: 11.9rem;
+  height: 4rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 1.1725;
+  letter-spacing: 0.21rem;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.2rem #ffffff;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.game-rule-container {
+  position: fixed;
+  width: 303px;
+  height: 367px;
+  top: 288px;
+  left: 964px;
+  border-radius: 13px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.rule-minicontainer {
+  position: fixed;
+  width: 278px;
+  height: 340px;
+  top: 295px;
+  left: 970px;
+  border-radius: 13px;
+  border: 7px solid #004429; 
+  background-color: #004429; 
+  z-index: 0;
+}
+
+.rules-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 29px;
+  font-family: Roboto, "Source Sans Pro";
+  color: white;
+  margin-bottom: 10px;
+}
+
+.bullet-point {
+    position: relative;
+    margin-bottom: 5px; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    font-family: Roboto, "Source Sans Pro";
+    font-size: 13px;
+}
+
+.bullet {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px; 
+    background-color: #ffd600;
+}
+
+.text {
+    flex-grow: 1; 
+}
+
+.cancel-round {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 267px;
+  left: 1225px;
+  border: 5px solid white; 
+  background-color: red;
+  border-radius: 50%; 
+  z-index: 2; 
+  cursor: pointer;
+  text-align: center;
+  font-family: Dangrek, "Source Sans Pro";
+  font-size: 30px;
+  color: white;
+  justify-content: center;
+}
+
+#gameRuleContainer
+{
+  display: none;
+}
+
+.rule-rectangle {
+  position: absolute;
+  width: 119px;
+  height: 40px;
+  top: 675px;
+  left: 1136px;
+  border-radius: 10px;
+  border: 2px solid white; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+
