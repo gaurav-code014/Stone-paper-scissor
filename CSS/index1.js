@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var circleComputer = document.createElement("div");
         circleComputer.className = "circle";
         circleComputer.innerHTML =
-          '<img id="gameImg" src="/images/' +
+          '<img id="gameImg" src="images/' +
           computerChoiceInfo.choice +
           '.png">';
         circleComputer.style.border = "10px solid " + computerChoiceInfo.border; 
